@@ -4,4 +4,4 @@ link - https://github.com/datacharmer/test_db). Use MySQL Database. One can setu
 localhost. Write some basic queries using python. Suppose you want to process/fetch a large
 number of records using python while keeping your memory usage low. Think of approaches on
 how to accomplish this and implement it.
-Hint: Use Generator</p>
+<br>Hint: Use Generator</p>
