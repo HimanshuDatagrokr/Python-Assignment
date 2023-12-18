@@ -3,7 +3,7 @@ from models.category import db
 from models.order import OrderModel, order_schema, orders_schema
 
 
-# Create new order
+# Create order
 def add_order():
     OrderID = request.json["OrderID"]
     CustomerID = request.json["CustomerID"]
@@ -43,14 +43,14 @@ def add_order():
     return order_schema.jsonify(new_order)
 
 
-# Get All Orders
+# Get Orders
 def get_orders():
     all_orders = OrderModel.query.all()
     result = orders_schema.dump(all_orders)
     return jsonify(result)
 
 
-# Update a Order
+# Update  Order
 def update_order(OrderID):
     order = OrderModel.query.get(OrderID)
 

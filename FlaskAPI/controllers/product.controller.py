@@ -3,7 +3,7 @@ from models.category import db
 from models.product import ProductModel, product_schema, products_schema
 
 
-# Create new product
+# create product
 def add_product():
     ProductID = request.json["ProductID"]
     CategoryID = request.json["CategoryID"]
@@ -34,15 +34,14 @@ def add_product():
 
     return product_schema.jsonify(new_product)
 
-
-# Get All Products
+# get products
 def get_products():
     all_products = ProductModel.query.all()
     result = products_schema.dump(all_products)
     return jsonify(result)
 
 
-# Update a Product
+# Update 
 def update_product(ProductID):
     product = ProductModel.query.get(ProductID)
 
