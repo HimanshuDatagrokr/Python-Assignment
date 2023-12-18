@@ -37,4 +37,10 @@ Northwind dataset –
         <li>Order history of the given customer</li>
   </ol>
 </p>
+<p>
+  b. Use any popular IDE for development and integrate it with git for version control c.
+Follow industry standards while writing the code and include basic schema and data
+validations and also use MVC model (with appropriate folder structure) and ORM d.
+Write unit test cases mocking all external service calls
+</p>
 
