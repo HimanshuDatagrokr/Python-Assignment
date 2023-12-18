@@ -26,3 +26,15 @@ Use Lambda to define anonymous functions.</p>
 
 <p>5. Write a program anti_html.py that takes a URL as an argument, downloads the HTML from
 the web, and prints it after stripping HTML tags.</p>
+
+<h1>Flask API:</h1>
+<p>a. Create a Rest API in python using flask which supports the following operations on the
+Northwind dataset –
+  <ol>
+        <li>Insert, update and select on customers</li>
+        <li>Insert, update and select on orders</li>
+        <li>Insert, update and select on products</li>
+        <li>Order history of the given customer</li>
+  </ol>
+</p>
+
