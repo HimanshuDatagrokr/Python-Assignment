@@ -3,7 +3,7 @@ from models.category import db
 from models.customer import CustomerModel, customer_schema, customers_schema
 
 
-# Create new customer
+# Create customer
 def add_customer():
     CustomerID = request.json["CustomerID"]
     CompanyName = request.json["CompanyName"]
@@ -37,7 +37,7 @@ def add_customer():
     return customer_schema.jsonify(new_customer)
 
 
-# Get All Customers
+# Get  Customers
 def get_customers():
     all_customers = CustomerModel.query.all()
     result = customers_schema.dump(all_customers)
